@@ -1,0 +1,146 @@
+                              gradient
+// void main() => runApp(const LinearGradientExampleApp());
+
+// class LinearGradientExampleApp extends StatelessWidget {
+//   const LinearGradientExampleApp({super.key});
+
+//   @override
+//   Widget build(BuildContext context) {
+//     return const MaterialApp(home: MoodyGradient());
+//   }
+// }
+
+// class MoodyGradient extends StatelessWidget {
+//   const MoodyGradient({super.key});
+
+//   @override
+//   Widget build(BuildContext context) {
+//     return Material(
+//       child: Container(
+//         decoration: const BoxDecoration(
+//           gradient: LinearGradient(
+//             begin: Alignment.topLeft,
+//             end: Alignment.topRight,
+//             colors: <Color>[
+//               Color(0xff2b537d),
+//               Color(0xff1c3755),
+//             ], // Gradient from https://learnui.design/tools/gradient-generator.html
+//             tileMode: TileMode.mirror,
+//           ),
+//         ),
+//       ),
+//     );
+//   }
+// }
+                              background color
+// theme: ThemeData(
+//   colorScheme: ColorScheme.fromSeed(
+//     seedColor: const Color.fromARGB(255, 243, 33, 33),  // or any other color you want
+//   ),
+//   useMaterial3: true,
+//   primaryColor: const Color(0xFF000000),
+//   scaffoldBackgroundColor: const Color(0xFF8d99ae),
+// ),
+// home: MyHomePage(title: 'CONNEXION'),
+                              centrer du texte horizontal-vertical
+// return new Scaffold(
+//   appBar: AppBar(
+//     title: Text(widget.title),
+//   ),
+//   body: const Center(
+//     child: Column(
+//       mainAxisAlignment: MainAxisAlignment.center,
+//       children: <Widget>[
+//           Text(
+//           'test',
+//           // style: Theme.of(context).textTheme.display1,
+//         ),
+//       ],
+//     ),
+//   ),
+// );
+                              old
+// class _MyHomePageState extends State<MyHomePage> {
+...
+//   Widget build(BuildContext context) {
+//     return MaterialApp(
+//       home: Scaffold(
+//         appBar: AppBar(
+=>
+//           title: const Row(
+//             mainAxisAlignment: MainAxisAlignment.center,
+//             mainAxisSize: MainAxisSize.min,
+//             children: <Widget>[
+//               Text(
+//                 'CONNEXION',
+//                 style: TextStyle(color: Color(0xFFedf2f4), fontWeight: FontWeight.bold),
+//               )
+//             ],
+//           ),
+                              IDK (probably old)
+    //   body: Center(
+    //       child: Container(
+    //         padding: const EdgeInsets.all(16.0),
+    //         margin: const EdgeInsets.symmetric(horizontal: 20.0, vertical: 10.0),
+    //         child: const Column(
+    //           children: [
+    //             Text(
+    //               'Test',
+    //               style: TextStyle(
+    //                 fontSize: 24,
+    //                 fontWeight: FontWeight.bold,
+    //                 color: Colors.black,
+    //               ),
+    //             ),
+    //           ]
+    //         ),
+    //       ),
+    //     ),          
+          
+    //     child: Padding(
+    //       padding: const EdgeInsets.all(20.0),
+    //       child: Column(
+    //         mainAxisAlignment: MainAxisAlignment.center,
+    //         children: [
+    //           // const Text(
+    //           //   'Se connecter',
+    //           //   style: TextStyle(
+    //           //     fontSize: 24,
+    //           //     fontWeight: FontWeight.bold,
+    //           //   ),
+    //           // ),
+    //           const SizedBox(height: 30),  // Espace entre le titre et les champs
+    //           TextField(
+    //             decoration: InputDecoration(
+    //               hintText: 'Nom d\'utilisateur',
+    //               border: OutlineInputBorder(  // Bordure du champ
+    //                 borderRadius: BorderRadius.circular(15),
+    //               ),
+    //               filled: true,
+    //               fillColor: const Color.fromARGB(255, 141, 153, 174),
+    //             ),
+    //           ),
+    //           const SizedBox(height: 20),  // Espace entre les deux champs
+    //           TextField(
+    //             obscureText: true,
+    //             decoration: InputDecoration(
+    //               hintText: 'Mot de passe',
+    //               border: OutlineInputBorder(
+    //                 borderRadius: BorderRadius.circular(15),
+    //               ),
+    //               filled: true, 
+    //               fillColor: const Color.fromARGB(255, 141, 153, 174),
+    //             ),
+    //           ),
+    //           OverflowBar(
+    //             // alignment: MainAxisAlignment.spaceEvenly,
+    //             children: <Widget>[
+    //               TextButton( child: const Text('Button 1'), onPressed: () {}),
+    //             ]
+    //           ),
+    //         ],
+    //       ),
+    //     ),
+    //     ),
+    //   ),
+    // );
